@@ -5,7 +5,6 @@ from gfxhat import touch
 from soma_fm import SomaFM
 
 soma = SomaFM()
-soma.listStations()
 
 # command abstract interface
 class Command(ABC):
@@ -15,18 +14,21 @@ class Command(ABC):
 
 # command
 class SomaCommand(Command):
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, station):
+        self.station = station
     def execute(self):
-        print('execute:' + self.name.upper() + ' pressed')
+        print('execute: name:   ' + self.station.name.upper())
+        print('execute: url:    ' + self.station.url)
+        print('execute: colour: ' + str(self.station.colour))
+
 
 # my commands
-up    = SomaCommand('up')
-down  = SomaCommand('down')
-left  = SomaCommand('left')
-minus = SomaCommand('minus')
-home  = SomaCommand('home')
-plus  = SomaCommand('plus')
+up    = SomaCommand(station=soma.stations['space_station'])
+down  = SomaCommand(station=soma.stations['drone_zone'])
+left  = SomaCommand(station=soma.stations['groove_salad'])
+minus = SomaCommand(station=soma.stations['lush'])
+home  = SomaCommand(station=soma.stations['lush'])
+plus  = SomaCommand(station=soma.stations['lush'])
 
 # map channels (button index) to commands
 buttonMappings = { 0: up,

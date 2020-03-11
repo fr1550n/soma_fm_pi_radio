@@ -7,6 +7,8 @@ class RGB:
         self.red   = red
         self.green = green
         self.blue  = blue
+    def __str__(self):
+        return "r:{} g:{} b:{}".format(self.red, self.green, self.blue)
 
 class SomaFMStation:
     """Details about a soma fm radio station"""
@@ -15,7 +17,7 @@ class SomaFMStation:
         self.url    = url
         self.colour = colour
         if (debug):
-            print("init: name: " + name + " url: " + url)
+            print("init: name: " + name + " url: " + url + " colour: " + colour)
 
 
 
@@ -30,6 +32,3 @@ class SomaFM:
     def listStations(self):
         for k in self.stations.keys():
             print("listStations: station: " + self.stations[k].name)
-
-#soma = SomaFM()
-#listStations(soma)

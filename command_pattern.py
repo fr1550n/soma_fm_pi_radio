@@ -2,14 +2,15 @@
 from abc import ABC, abstractmethod
 import signal
 from gfxhat import touch
+from soma_fm import SomaFM
+
+soma = SomaFM()
+soma.listStations()
 
 # command abstract interface
 class Command(ABC):
-    def __init__(self, name):
-        self.name = name
     @abstractmethod
     def execute(self):
-        print('executing'+ name)
         pass
 
 # command
@@ -43,5 +44,6 @@ def handler(channel, event):
 # assign the command handler to the buttons
 for x in range(6):
     touch.on(x, handler)
+
 
 signal.pause() # https://docs.python.org/2/library/signal.html

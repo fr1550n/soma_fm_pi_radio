@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://docs.pimoroni.com/gfxhat/ -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GFX HAT — GFX HAT 0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="http://docs.pimoroni.com/gfxhat/_static/favicon.png">
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="./GFX HAT — GFX HAT 0.0.1 documentation_files/theme.css" type="text/css">
+  
+
+  
+
+  
+        <link rel="search" title="Search" href="http://docs.pimoroni.com/gfxhat/search.html">
+    <link rel="top" title="GFX HAT 0.0.1 documentation" href="http://docs.pimoroni.com/gfxhat/#">
+	<link rel="stylesheet" href="./GFX HAT — GFX HAT 0.0.1 documentation_files/custom.css" type="text/css">
+
+
+  
+  <script src="./GFX HAT — GFX HAT 0.0.1 documentation_files/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="http://docs.pimoroni.com/gfxhat/#" class="icon icon-home"> GFX HAT
+          
+
+          
+            
+            <img src="./GFX HAT — GFX HAT 0.0.1 documentation_files/shop-logo.png" class="logo">
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="http://docs.pimoroni.com/gfxhat/search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <!-- Local TOC -->
+                <div class="local-toc"><ul>
+<li><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/#"><span class="toctree-expand"></span>GFX HAT</a><ul>
+<li><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/#at-a-glance">At A Glance</a></li>
+<li><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/#lcd">LCD</a></li>
+<li><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/#backlight">Backlight</a></li>
+<li><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/#touch">Touch</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="http://docs.pimoroni.com/gfxhat/#">GFX HAT</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="gfx-hat">
+<h1>GFX HAT<a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfx-hat" title="Permalink to this headline">¶</a></h1>
+<p>This documentation will guide you through the methods available in the GFX HAT library.</p>
+<div class="section" id="at-a-glance">
+<h2>At A Glance<a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#at-a-glance" title="Permalink to this headline">¶</a></h2>
+<div id="ataglance"><span class="target" id="module-gfxhat.lcd"></span><p>Library for the GFX HAT ST7567 SPI LCD.</p>
+<dl class="function">
+<dt id="gfxhat.lcd.clear">
+<code class="descclassname">gfxhat.lcd.</code><code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/lcd.html#clear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.lcd.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="gfxhat.lcd.set_pixel">
+<code class="descclassname">gfxhat.lcd.</code><code class="descname">set_pixel</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/lcd.html#set_pixel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.lcd.set_pixel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="gfxhat.lcd.show">
+<code class="descclassname">gfxhat.lcd.</code><code class="descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/lcd.html#show"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.lcd.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<span class="target" id="module-gfxhat.backlight"></span><p>Library for the GFX HAT SN3218 backlight.</p>
+<dl class="function">
+<dt id="gfxhat.backlight.set_all">
+<code class="descclassname">gfxhat.backlight.</code><code class="descname">set_all</code><span class="sig-paren">(</span><em>r</em>, <em>g</em>, <em>b</em><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/backlight.html#set_all"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.backlight.set_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="gfxhat.backlight.set_pixel">
+<code class="descclassname">gfxhat.backlight.</code><code class="descname">set_pixel</code><span class="sig-paren">(</span><em>x</em>, <em>r</em>, <em>g</em>, <em>b</em><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/backlight.html#set_pixel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.backlight.set_pixel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="gfxhat.backlight.setup">
+<code class="descclassname">gfxhat.backlight.</code><code class="descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/backlight.html#setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.backlight.setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="gfxhat.backlight.show">
+<code class="descclassname">gfxhat.backlight.</code><code class="descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/backlight.html#show"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.backlight.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<span class="target" id="module-gfxhat.touch"></span><p>Library for the GFX HAT Cap1166 touch controller.</p>
+<dl class="function">
+<dt id="gfxhat.touch.enable_repeat">
+<code class="descclassname">gfxhat.touch.</code><code class="descname">enable_repeat</code><span class="sig-paren">(</span><em>enable</em><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/touch.html#enable_repeat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.touch.enable_repeat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="gfxhat.touch.get_name">
+<code class="descclassname">gfxhat.touch.</code><code class="descname">get_name</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/touch.html#get_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.touch.get_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="gfxhat.touch.high_sensitivity">
+<code class="descclassname">gfxhat.touch.</code><code class="descname">high_sensitivity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/touch.html#high_sensitivity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.touch.high_sensitivity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="gfxhat.touch.on">
+<code class="descclassname">gfxhat.touch.</code><code class="descname">on</code><span class="sig-paren">(</span><em>buttons</em>, <em>handler=None</em><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/touch.html#on"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.touch.on" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="gfxhat.touch.set_led">
+<code class="descclassname">gfxhat.touch.</code><code class="descname">set_led</code><span class="sig-paren">(</span><em>index</em>, <em>state</em><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/touch.html#set_led"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.touch.set_led" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="gfxhat.touch.set_repeat_rate">
+<code class="descclassname">gfxhat.touch.</code><code class="descname">set_repeat_rate</code><span class="sig-paren">(</span><em>rate</em><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/touch.html#set_repeat_rate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.touch.set_repeat_rate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="gfxhat.touch.setup">
+<code class="descclassname">gfxhat.touch.</code><code class="descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="http://docs.pimoroni.com/gfxhat/_modules/gfxhat/touch.html#setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#gfxhat.touch.setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div></div>
+<div class="section" id="lcd">
+<h2>LCD<a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#lcd" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt>
+<code class="descclassname">lcd.</code><code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Clear GFX HAT’s display buffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">lcd.</code><code class="descname">set_pixel</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>value</em><span class="sig-paren">)</span></dt>
+<dd><p>Set a single pixel in GTX HAT’s display buffer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<colgroup><col class="field-name">
+<col class="field-body">
+</colgroup><tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> – X position (from 0 to 127)</li>
+<li><strong>y</strong> – Y position (from 0 to 63)</li>
+<li><strong>value</strong> – pixel state 1 = On, 0 = Off</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">lcd.</code><code class="descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Update GFX HAT with the current buffer contents.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="backlight">
+<h2>Backlight<a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#backlight" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt>
+<code class="descclassname">backlight.</code><code class="descname">set_pixel</code><span class="sig-paren">(</span><em>x</em>, <em>r</em>, <em>g</em>, <em>b</em><span class="sig-paren">)</span></dt>
+<dd><p>Set a single backlight zone.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<colgroup><col class="field-name">
+<col class="field-body">
+</colgroup><tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> – pixel index (0 = left most, 5 = right most)</li>
+<li><strong>r</strong> – amount of red from 0 to 255</li>
+<li><strong>g</strong> – amount of green from 0 to 255</li>
+<li><strong>b</strong> – amount of blue from 0 to 255</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">backlight.</code><code class="descname">set_all</code><span class="sig-paren">(</span><em>r</em>, <em>g</em>, <em>b</em><span class="sig-paren">)</span></dt>
+<dd><p>Set all backlight zones.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<colgroup><col class="field-name">
+<col class="field-body">
+</colgroup><tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>r</strong> – amount of red from 0 to 255</li>
+<li><strong>g</strong> – amount of green from 0 to 255</li>
+<li><strong>b</strong> – amount of blue from 0 to 255</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">backlight.</code><code class="descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Show changes to the backlight.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="touch">
+<h2>Touch<a class="headerlink" href="http://docs.pimoroni.com/gfxhat/#touch" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt>
+<code class="descclassname">touch.</code><code class="descname">set_led</code><span class="sig-paren">(</span><em>index</em>, <em>state</em><span class="sig-paren">)</span></dt>
+<dd><p>Set LED state.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<colgroup><col class="field-name">
+<col class="field-body">
+</colgroup><tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index</strong> – LED index</li>
+<li><strong>state</strong> – LED state (1 = on, 0 = off)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">touch.</code><code class="descname">enable_repeat</code><span class="sig-paren">(</span><em>enable</em><span class="sig-paren">)</span></dt>
+<dd><p>Enable touch hold repeat.</p>
+<p>If enable is true, repeat will be enabled. This will
+trigger new touch events at the set repeat_rate when
+a touch input is held.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<colgroup><col class="field-name">
+<col class="field-body">
+</colgroup><tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enable</strong> – enable/disable repeat: True/False</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">touch.</code><code class="descname">high_sensitivity</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Switch to high sensitivity mode.</p>
+<p>This predetermined high sensitivity mode is for using
+touch through 3mm perspex or similar materials.</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">touch.</code><code class="descname">on</code><span class="sig-paren">(</span><em>buttons</em>, <em>handler=None</em><span class="sig-paren">)</span></dt>
+<dd><p>Handle a press of one or more buttons.</p>
+<p>Decorator. Use with @captouch.on(UP)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<colgroup><col class="field-name">
+<col class="field-body">
+</colgroup><tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>buttons</strong> – List, or single instance of cap touch button constant</li>
+<li><strong>bounce</strong> – Maintained for compatibility with Dot3k joystick, unused</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">touch.</code><code class="descname">set_repeat_rate</code><span class="sig-paren">(</span><em>rate</em><span class="sig-paren">)</span></dt>
+<dd><p>Set hold repeat rate.</p>
+<p>Repeat rate values are clamped to the nearest 35ms,
+values from 35 to 560 are valid.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<colgroup><col class="field-name">
+<col class="field-body">
+</colgroup><tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>rate</strong> – time in ms from 35 to 560</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>
+        © Copyright 2017, Pimoroni Ltd.
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="./GFX HAT — GFX HAT 0.0.1 documentation_files/jquery.js"></script>
+      <script type="text/javascript" src="./GFX HAT — GFX HAT 0.0.1 documentation_files/underscore.js"></script>
+      <script type="text/javascript" src="./GFX HAT — GFX HAT 0.0.1 documentation_files/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="./GFX HAT — GFX HAT 0.0.1 documentation_files/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+<script type="text/javascript">
+	var menuItems = $('.wy-menu-vertical').find('a');
+
+	var scrollItems = menuItems.map(function(){
+		var item = $($(this).attr('href'));
+		if (item.length) { return item; }
+	});
+
+	$(window).on('scroll',function(){
+		var fromTop = $(this).scrollTop()
+
+		var cur = scrollItems.map(function(){
+			if ($(this).offset().top < fromTop+30) return this;
+		});
+
+		cur = cur[cur.length-1];
+		var id = cur && cur.length ? cur[0].id : "";
+
+		var target = $('#'+id);
+		target.attr('id','');
+		window.location.hash = '#'+id;
+		target.attr('id',id);
+
+		menuItems
+			.parent().removeClass("current")
+			.end().filter("[href='#"+id+"']").parent().addClass("current");
+	});
+
+	$(window).on('hashchange',function(){
+
+		var hash = window.location.hash.replace('#','');
+
+		menuItems
+			.parent().removeClass("current")
+			.end().filter("[href='#"+hash+"']").parent().addClass("current");
+	})
+</script>
+
+
+
+</body></html>

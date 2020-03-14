@@ -1,1 +1,3 @@
 https://somafm.com/channels.json
+
+a web interface https://codepen.io/webdesignermsk/pen/rNVardK

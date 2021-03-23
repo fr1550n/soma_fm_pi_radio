@@ -80,6 +80,13 @@ class Screen:
                 lcd.set_pixel(self.x, self.y, pixel)
         lcd.show()
 
+    def turn_off(self):
+        self.clear()
+        lcd.contrast(0)
+        backlight.set_all(0,0,0)
+        lcd.show()
+        backlight.show()
 
 #screen = Screen()
 #screen.display("hello", "world")
+#screen.turn_off()

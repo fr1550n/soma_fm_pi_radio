@@ -4,9 +4,11 @@ import signal
 from gfxhat import touch
 from soma_fm import SomaFM
 from media_player import MediaPlayer
+from screen import Screen
 
 soma         = SomaFM()
 media_player = MediaPlayer()
+screen       = Screen()
 
 # command abstract interface
 class Command(ABC):
@@ -16,24 +18,31 @@ class Command(ABC):
 
 # command
 class SomaCommand(Command):
-    def __init__(self, media_player, station):
+    def __init__(self, media_player, station, screen):
         self.media_player = media_player,
         self.station      = station
+        self.screen       = screen
 
     def execute(self):
         print('execute: name:   ' + self.station.name.upper())
         print('execute: url:    ' + self.station.url)
         print('execute: colour: ' + str(self.station.colour))
         media_player.play(self.station.url)
+        self.display(self.station)
 
+    def display(self, station):
+        screen.flash_backlight()
+        screen.flash_buttons()
+        screen.clear()
+        screen.display("Soma FM", station.name)
 
 # my commands
-up    = SomaCommand(media_player=media_player, station=soma.stations['space_station'])
-down  = SomaCommand(media_player=media_player, station=soma.stations['drone_zone'])
-left  = SomaCommand(media_player=media_player, station=soma.stations['groove_salad'])
-minus = SomaCommand(media_player=media_player, station=soma.stations['lush'])
-home  = SomaCommand(media_player=media_player, station=soma.stations['lush'])
-plus  = SomaCommand(media_player=media_player, station=soma.stations['lush'])
+up    = SomaCommand(media_player=media_player, station=soma.stations['space_station'], screen=screen)
+down  = SomaCommand(media_player=media_player, station=soma.stations['drone_zone'], screen=screen)
+left  = SomaCommand(media_player=media_player, station=soma.stations['groove_salad'], screen=screen)
+minus = SomaCommand(media_player=media_player, station=soma.stations['lush'], screen=screen)
+home  = SomaCommand(media_player=media_player, station=soma.stations['lush'], screen=screen)
+plus  = SomaCommand(media_player=media_player, station=soma.stations['lush'], screen=screen)
 
 # map channels (button index) to commands
 buttonMappings = { 0: up,

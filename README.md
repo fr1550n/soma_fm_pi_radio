@@ -10,7 +10,9 @@
 
  2. Install the GFX Hat library:
  
-```pi@somafm:~ $ curl -sS https://get.pimoroni.com/gfxhat | bash```
+```
+curl -sS https://get.pimoroni.com/gfxhat | bash
+```
 
  3. There's a chance the  GFX Hat library is out of date.
     If you get an error running the gfx hat examples, e.g. contrast-scanner.py:
@@ -43,4 +45,4 @@ sudo pip3 install python-vlc
     Installing collected packages: python-vlc
     Successfully installed python-vlc-3.0.11115
 ```
- 4. The code needs a bit of organising; run command_pattern.py to start using it.
+ 4. The code needs a bit of organising; run `command_pattern.py` to start using it.

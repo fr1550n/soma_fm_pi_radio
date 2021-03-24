@@ -27,8 +27,8 @@ This is a (hacky) fix (for python3), which grabs the latest files and uses them 
 
 ```
 cd /usr/local/lib/python3.7/dist-packages
-sudo mkdir old`
-sudo mv gfxhat old/
+sudo mkdir old
+sudo mv gfxhat old
 sudo git clone https://github.com/pimoroni/gfx-hat
 sudo cp -r gfx-hat/library/gfxhat gfxhat
 ```

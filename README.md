@@ -45,4 +45,6 @@ sudo pip3 install python-vlc
     Installing collected packages: python-vlc
     Successfully installed python-vlc-3.0.11115
 ```
- 4. The code needs a bit of organising; run `command_pattern.py` to start using it.
+ 4. run `main.py` to start using it. 
+    Mappings of commands to buttons are therein.  
+    There are commands to play channels, play/pause them and shutdown the pi in this file too.

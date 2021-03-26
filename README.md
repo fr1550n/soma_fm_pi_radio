@@ -35,7 +35,7 @@ sudo cp -r gfx-hat/library/gfxhat gfxhat
 
 Pimoroni have been alerted, the thread is here: https://forums.pimoroni.com/t/gfx-hat-contrast-problems/11610
    
- 3. Install the VLC libary
+ 4. Install the VLC libary
 ``` 
 sudo pip3 install python-vlc
     Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
@@ -45,6 +45,6 @@ sudo pip3 install python-vlc
     Installing collected packages: python-vlc
     Successfully installed python-vlc-3.0.11115
 ```
- 4. run `main.py` to start using it. 
+ 5. run `main.py` to start using it. 
     Mappings of commands to buttons are therein.  
     There are commands to play channels, play/pause them and shutdown the pi in this file too.

@@ -4,6 +4,9 @@
 * This project turns your Raspberry Pi into a dedicated Soma FM radio.
 * The project requires an [LCD Display with RGB Backlight and Touch Buttons.](<https://thepihut.com/products/gfx-hat-128x64-lcd-display-with-rgb-backlight-and-touch-buttons>)
 
+## Demo: 
+see the file: ```soma_fm_pi_radio_demo.mp4```
+
 ## Preparation: 
 
  1. Obtain a Raspberry Pi 3B+ and slap on Raspbian. I used Buster.
